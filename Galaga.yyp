@@ -1,10 +1,14 @@
 {
   "resources": [
+    {"id":{"name":"sSpaceShip","path":"sprites/sSpaceShip/sSpaceShip.yy",},"order":3,},
+    {"id":{"name":"oSpaceShip","path":"objects/oSpaceShip/oSpaceShip.yy",},"order":3,},
+    {"id":{"name":"sLaser","path":"sprites/sLaser/sLaser.yy",},"order":4,},
     {"id":{"name":"oEnemySpawner","path":"objects/oEnemySpawner/oEnemySpawner.yy",},"order":1,},
     {"id":{"name":"sEnemySpawner","path":"sprites/sEnemySpawner/sEnemySpawner.yy",},"order":1,},
     {"id":{"name":"EnemyPath_1","path":"paths/EnemyPath_1/EnemyPath_1.yy",},"order":0,},
     {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},"order":0,},
     {"id":{"name":"sEnemyLeader","path":"sprites/sEnemyLeader/sEnemyLeader.yy",},"order":2,},
+    {"id":{"name":"oLaser","path":"objects/oLaser/oLaser.yy",},"order":4,},
     {"id":{"name":"oEnemyLeader","path":"objects/oEnemyLeader/oEnemyLeader.yy",},"order":2,},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},

@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
 //called every second
 
 //tempEnemy is the enemy the spawner creates now, 
@@ -25,9 +24,12 @@ else
 	array_push(enemyIDs, tempEnemy.id);
 	
 	//the enemy in front is the index of this enemy - 1
-	tempEnemy.enemyInFrontIndex = enemyIDs[enemyIndex] - 1;
+	tempEnemy.enemyInFrontIndex = enemyIDs[enemyIndex - 1];
 	show_debug_message(tempEnemy.enemyInFrontIndex);
 	enemyIndex++;
 }
+
+//show_debug_message("Length: " + string(array_length(enemyIDs)));
+//show_debug_message("Index: " + string(enemyIndex));
 
 alarmIsReady = true;

@@ -8,6 +8,7 @@ alarm_set(0, 60);
 enemyInFrontX = 0;
 enemyInFrontY = 0;
 
+
 enemyInFrontIndex = 0;
 
 //show_debug_message(oEnemySpawner.enemyInFrontIndex);
