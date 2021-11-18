@@ -5,3 +5,5 @@ if(path_index == -1)
 {
 	path_start(EnemyPath_1, leaderSpeed, path_action_stop, false);
 }
+
+image_angle = direction + 90;

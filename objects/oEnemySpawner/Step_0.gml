@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if(alarmIsReady)
 {
-	alarm_set(0, 60);
+	alarm_set(0, 20);
 	
 	//stops alarm from getting set again without the previous one being finished
 	alarmIsReady = false;

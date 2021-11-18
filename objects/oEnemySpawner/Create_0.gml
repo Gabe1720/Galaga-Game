@@ -11,5 +11,12 @@ loopCount = 0;
 
 //When I instantiate each oEnemy, 
 //I need a number that relfects the index it is in the enemyIDs array
-enemyIndex = 0;
+global.enemyIndex = 0;
+
+enemyIndexPrevious = 0;
+
+global.enemyCount = 0;
+
+lastEnemy = noone;
+
 
