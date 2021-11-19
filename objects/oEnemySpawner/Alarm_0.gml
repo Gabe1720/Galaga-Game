@@ -43,22 +43,40 @@ else
 }
 */
 
-if(global.enemyCount < 6)
+//enemies get spawned up to the cap,
+//tracks when the last enemy finishes the path so spawner knows when to send next wave
+//waveCount tracks how many times waves have gone and waves stop being sent when limit is hit
+if(waveCount < 3)
 {
-	instance_create_layer(x + 100, y, "Instances", oEnemy);
-	global.enemyCount++;
-}
-if(global.enemyCount == 6)
-{
-	lastEnemy = instance_create_layer(x + 100, y, "Instances", oEnemy);
-	global.enemyCount++;
-}
-
-if(global.enemyCount == 7)
-{
-	if(lastEnemy.reachedPathEnd)
+	if(global.enemyCount < 6)
 	{
-		global.enemyCount = 0;
+		var tempEnemy = instance_create_layer(x + 100, y, "Instances", oEnemy);
+		tempEnemy.enemyIndex = global.enemyCount;
+		global.enemyCount++;
+		show_debug_message(waveCount);
+		tempEnemy.waitLocation = waveCount;
+		
+	}
+	if(global.enemyCount == 6)
+	{
+		lastEnemy = instance_create_layer(x + 100, y, "Instances", oEnemy);
+		lastEnemy.enemyIndex = global.enemyCount;
+		global.enemyCount++;
+		lastEnemy.waitLocation = waveCount;
+	}
+
+	if(global.enemyCount == 7)
+	{
+		if(instance_exists(lastEnemy) && lastEnemy.reachedPathEnd)
+		{
+			global.enemyCount = 0;
+			waveCount++;
+		}
+		else if(!instance_exists(lastEnemy))
+		{
+			global.enemyCount = 0;
+			waveCount++;
+		}
 	}
 }
 //show_debug_message("Length: " + string(array_length(enemyIDs)));
@@ -66,4 +84,5 @@ if(global.enemyCount == 7)
 
 alarmIsReady = true;
 
-show_debug_message(global.enemyCount);
+//show_debug_message(tempEnemy.enemyCount);
+//show_debug_message(global.enemyCount);

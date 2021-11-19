@@ -3,4 +3,5 @@
 //global.enemyIndex--;
 //show_debug_message("MY ID: " + string(id));
 //checkIfexists = 0;
+//global.enemyCount--;
 instance_destroy();
