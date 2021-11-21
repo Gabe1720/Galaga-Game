@@ -8,4 +8,5 @@ if(alarmIsReady)
 	alarmIsReady = false;
 }
 
+//show_debug_message("Wave Count: " +string(global.waveCount));
 //show_debug_message(array_length(enemyIDs));

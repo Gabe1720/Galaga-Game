@@ -19,6 +19,8 @@ global.enemyCount = 0;
 
 lastEnemy = noone;
 
-waveCount = 0;
+global.waveCount = 0;
+
+nextWaveReady = false;
 
 
