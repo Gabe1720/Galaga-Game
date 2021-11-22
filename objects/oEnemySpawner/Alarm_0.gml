@@ -46,7 +46,8 @@ else
 //enemies get spawned up to the cap,
 //tracks when the last enemy finishes the path so spawner knows when to send next wave
 //waveCount tracks how many times waves have gone and waves stop being sent when limit is hit
-if(true/*global.waveCount < 12*/)
+//show_debug_message("Next round ready: " + string(nextRoundReady));
+if(nextRoundReady)
 {
 	if(global.enemyCount < 1)
 	{
@@ -82,7 +83,7 @@ if(true/*global.waveCount < 12*/)
 	{
 		global.enemyCount = 0;
 		global.waveCount++;
-		nextWaveReady = false;
+		wavesThisRound++;
 	}
 }
 //show_debug_message(global.enemyCount);

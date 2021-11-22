@@ -7,7 +7,17 @@ shieldHealth = 100;
 
 isShieldActivate = false;
 
-show_debug_message("Shield Health: " + string(shieldHealth));
+//show_debug_message("Shield Health: " + string(shieldHealth));
 
 readyForHit = true;
 
+global.gameOver = false;
+
+noRumbleSound = true;
+
+oldPositionX = x;
+oldPositionY = y;
+
+rumble = sndSpaceshipRumble;
+
+audio_play_sound(sndSpaceshipRumble, 1, true);

@@ -23,4 +23,16 @@ global.waveCount = 0;
 
 nextWaveReady = false;
 
+global.myRound = 1;
+
+wavesThisRound = 0;
+
+waveCap = 8;
+
+nextRoundReady = true;
+
+global.points = 0;
+
+
+
 

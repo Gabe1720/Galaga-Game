@@ -35,7 +35,7 @@ if(instance_exists(oSpaceShip))
 	{
 		instance_create_layer(x, y, "Instances", oEnemyLaser);
 		laserHasBeenShot = true;
-		show_debug_message("I DID IT ISDJNFIJDNGJINDGJN AHAHHAHAHAHA");
+		//show_debug_message("I DID IT ISDJNFIJDNGJINDGJN AHAHHAHAHAHA");
 	}
 }
 if(!reachedPathEnd || speed != 0)

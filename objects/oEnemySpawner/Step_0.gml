@@ -8,5 +8,12 @@ if(alarmIsReady)
 	alarmIsReady = false;
 }
 
+if(wavesThisRound >= waveCap)
+{
+	nextRoundReady = false;
+	//show_debug_message("ALARM BEING SET");
+	alarm_set(2, 800);
+	wavesThisRound = 0;
+}
 //show_debug_message("Wave Count: " +string(global.waveCount));
 //show_debug_message(array_length(enemyIDs));
